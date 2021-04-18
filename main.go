@@ -22,6 +22,11 @@ type ScanItem struct {
 
 func main() {
 
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
 	app := fiber.New()
 	api := app.Group("/api/v1") // /api
 
@@ -31,7 +36,7 @@ func main() {
 	api.Get("/scanitems", createFakeScanItem)
 	api.Get("/products/:code", getProductByCode)
 
-	app.Listen(":3000")
+	app.Server().ListenAndServe(":" + port)
 
 }
 
