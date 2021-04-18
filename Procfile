@@ -1,1 +1,1 @@
-web: api_fake_data
+web: go run main.go
