@@ -1,4 +1,4 @@
-module github.com/rgaete/api_data_fake
+module github.com/rgaete/api-fake-data
 
 go 1.14
 

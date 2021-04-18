@@ -25,6 +25,9 @@ func main() {
 	app := fiber.New()
 	api := app.Group("/api/v1") // /api
 
+	app.Get("/", func(ctx *fiber.Ctx) error {
+		return ctx.SendString("Hello Heroku")
+	})
 	api.Get("/scanitems", createFakeScanItem)
 	api.Get("/products/:code", getProductByCode)
 
