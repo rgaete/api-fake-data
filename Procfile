@@ -1,1 +1,1 @@
-web: api-data-fake
+web: api-fake-data
