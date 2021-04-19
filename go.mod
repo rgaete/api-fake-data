@@ -5,8 +5,9 @@ go 1.15
 require (
 	github.com/Shopify/sarama v1.27.2
 	github.com/andybalholm/brotli v1.0.1 // indirect
-	github.com/brianvoe/gofakeit v3.18.0+incompatible // indirect
+	github.com/brianvoe/gofakeit v3.18.0+incompatible
 	github.com/corpix/uarand v0.1.1 // indirect
+	github.com/go-co-op/gocron v1.5.0 // indirect
 	github.com/gofiber/fiber v1.14.6
 	github.com/gofiber/fiber/v2 v2.3.2
 	github.com/icrowley/fake v0.0.0-20180203215853-4178557ae428 // indirect
